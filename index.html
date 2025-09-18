@@ -1,35 +1,19 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>PROJECT_1_APP3D_app</title>
-  <link rel="stylesheet" href="./style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Chicago and boston App 3D</title>
 
-</head>
+<link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/css/main.css">
+<script src="https://js.arcgis.com/4.18/"></script>
+
 <body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>3D Map Explorer: Chicago & Boston</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://js.arcgis.com/4.33/esri/themes/light/main.css">
-</head>
-<body>
-  <h1>3D Map Explorer: Chicago & Boston</h1>
-  <div class="buttons">
-    <button id="chicagoBtn">Chicago</button>
-    <button id="bostonBtn">Boston</button>
-  </div>
   <div id="viewDiv"></div>
 
-  <script src="https://js.arcgis.com/4.33/"></script>
-  <script src="script.js"></script>
-</body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
+  <!-- City switch buttons -->
+  <button id="chicagoBtn">Chicago</button>
+  <button id="bostonBtn">Boston</button>
 
+  <!-- Boston-specific camera view buttons -->
+  <button id="stl" class="off boston-only">Fenway, Boston</button>
+  <button id="bei" class="off boston-only">Logan airport, Boston</button>
+  <button id="v3" class="off boston-only">Downtown, Boston</button>
 </body>
-</html>
