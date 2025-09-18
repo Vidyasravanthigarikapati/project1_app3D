@@ -7,7 +7,7 @@ require([
 ], function(WebScene, SceneView, Legend, LayerList, Search) {
 
   // Web Scene IDs
-  const chicagoSceneId = "fef6868cafcc420eb4bc2e78d54c38d7";
+  const chicagoSceneId = "9c76c5a0172c4452a7ecb6ff966e9a0a";
   const bostonSceneId = "8046207c1c214b5587230f5e5f8efc77";
 
   // Create WebScenes
