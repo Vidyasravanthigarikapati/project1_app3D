@@ -4,7 +4,7 @@ require([
   "esri/widgets/Legend",
   "esri/widgets/LayerList",
   "esri/widgets/Search"
-], function(WebScene, SceneView, Legend, LayerList, Search) {
+], function(WebScene, SceneView, Legend, LayerList) {
 
   // Web Scene IDs
   const chicagoSceneId = "9c76c5a0172c4452a7ecb6ff966e9a0a";
@@ -28,11 +28,9 @@ require([
   // Add widgets
   const legend = new Legend({ view });
   const layerList = new LayerList({ view });
-  const searchWidget = new Search({ view });
 
   view.ui.add(legend, "bottom-left");
   view.ui.add(layerList, "top-left");
-  view.ui.add(searchWidget, "top-left");
 
   // --- Button Logic ---
   document.getElementById("chicagoBtn").addEventListener("click", () => {
